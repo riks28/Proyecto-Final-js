@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="title" content="Informacion de Contacto, Consutas, Solicitudes, Turnos, Compras">
+    <meta name="description" content="Contacto, consultas nutricionales, Solicitud, turnos para especialistas">
+    <meta name="keywords"
+        content="Productos Nutricionales, Nutroterapeuticos, Ultratech, Ensure, proteinas, Creatina, BCAA, Whey Protein, ginmasio, Nutricion y deporte">
+    <!--CDN CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--link de google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=PT+Serif:ital@0;1&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Nutre Teams | Contacto</title>
+</head>
+
+<body>
+    <!--BARRA DE NAV DE BOOTSTRAP-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-rgba(255, 123, 0, 0.815)">
+            <a href="../index.html"><img src="../img/logo-nutreteam1.jpg" alt="Logo Marca" class="logo-nutre">
+            </a>
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/imc.html">Calculadora de IMC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/buscador.html">Buscador</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </nav>
+    </header>
+    <h1>Buscador - Nutritionix API</h1>
+    
+    <form id="formulario" class="posit-foot">
+        <legend class="titulo-form">Buscar Alimento</legend>
+        <hr>
+
+        <div>
+            <label for="Nombre">Alimento</label>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+        </div>
+
+
+    <button id="btnBuscar" onclick="buscar()" class="botBuscador">Buscar</button>
+    <div id="resultados"></div>
+
+
+    <!--FOOTER-->
+    <footer>
+    
+        <div class="posit-fot">
+            <small> &copy; | Creado por The Programer Team | - Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+
+    <!-- link de JS -->
+    <script src="../buscador.js"></script>
+</body>
+
+</html>
